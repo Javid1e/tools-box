@@ -10,6 +10,6 @@ module.exports = withBundleAnalyzer({
   experimental: {
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   },
-  assetPrefix: ".",
+  assetPrefix: '/',
   output: 'export',
 });

@@ -21,6 +21,9 @@
     "paths": {
       "@/*": [
         "./*"
+      ],
+      "@IranSansFonts": [
+        "./UI/components/Fonts/IranSans/IranSans.ts"
       ]
     },
     "plugins": [

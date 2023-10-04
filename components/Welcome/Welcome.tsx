@@ -1,23 +1,22 @@
-import { Title, Text, Anchor } from '@mantine/core';
+import { Title, Text } from '@mantine/core';
+import { IRANSansBlack } from '@IranSansFonts';
 import classes from './Welcome.module.css';
 
 export function Welcome() {
   return (
     <>
-      <Title className={classes.title} ta="center" mt={100}>
-        Welcome to{' '}
+      <Title
+        className={`${classes.title}${IRANSansBlack.className}`}
+        ta="center"
+        mt={100}
+        dir="rtl"
+      >
+        به جعبه ابزار{' '}
         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-          Mantine
+          برتر{' '}
         </Text>
+        خوش آمدید.
       </Title>
-      <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
-        This starter Next.js project includes a minimal setup for server side rendering, if you want
-        to learn more on Mantine + Next.js integration follow{' '}
-        <Anchor href="https://mantine.dev/guides/next/" size="lg">
-          this guide
-        </Anchor>
-        . To get started edit page.tsx file.
-      </Text>
     </>
   );
 }
